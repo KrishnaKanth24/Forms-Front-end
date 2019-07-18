@@ -1,0 +1,221 @@
+<html>
+<head>
+<title>College Form</title>
+<style text='text/css'>
+	body{
+		background-color:#628C8F
+		}
+	#top{
+		height:50px;
+		margin-top:0;
+		padding:0;
+		border:0;
+		background-color:#83abeb;
+		}
+	h1{
+		margin-top:0px;
+		padding:8px;
+		}
+	#left{
+		float:left;
+		width:50%;
+		height:320px;
+		//background-color:yellow;
+		}
+	#left_form{
+		font-size:20;
+		padding:50px;
+	}
+	.labl{
+		display:block;
+		float:left;
+		width:120px;	
+		}
+    .left-box{
+        width: 280px;
+    }
+	#right{
+		float:right;
+		width:50%;
+		height:320px;
+		//background-color:pink;
+		}
+	.sub_form{
+		margin-top:40px;
+		width:270px;
+		height:80px;
+		border:1px solid black;
+		font-size:30;
+		}
+	#boxes{
+		margin-top:326px;
+		height:130px;
+		//background-color:green;
+		overflow-x:scroll;
+		white-space:nowrap;
+		}
+	#button{
+		height:40px;
+		//background-color:red;
+		}
+    .listbox_name{
+        position:relative;
+        top: -55px;
+        left:90px;
+        }
+	.listbox{
+        width:150px;
+		margin-top:26px;
+		}
+	.hide_but{
+		position: relative;
+        top:25px;
+        right: 100px;
+		background-color:red;
+		}
+	.left{
+		margin-left:30px;
+		}
+	.but{
+		margin-top:8px;
+		margin-right:80px;
+		}
+    #bottom{
+        overflow-x:auto;
+		display: block;
+        height:200px;
+		//background-color:purple;
+		}
+    table{
+        overflow-x: auto;
+        table-layout: fixed;
+        //width:100%;
+        height:100%;
+		border:1px solid black;
+		}
+    td{
+        width:50%;
+        font-size: 40px;
+        text-align: center;
+      }   
+</style>
+</head>
+<body>
+	<div id="top">
+		<h1>College Department Database</h1>
+	</div>
+	
+	<div id="left">
+		<form id="left_form" action="" method="">
+				<label class="labl">College:</label> 
+				<input type="text" name="college" class="left-box" /><br/><br/>
+				<label class="labl">Department:</label>
+				<select name="dropdown" class="left-box">
+					<option value="CSE">Computer</option>
+					<option value="ECE">Communication</option>
+					<option value="EEE">Electrical</option>
+					<option value="Mech">Mechanical</option>
+					</select><br/><br/>
+				<label class="labl">Dept Code:</label> 
+				<input type="text" name="code" class="left-box" /><br/><br/>
+				<label class="labl">Total Students:</label> 
+				<input type="text" name="total" class="left-box" /><br/><br/><br/>
+				<label class="labl">Result:</label> 
+				<input type="text" name="result" class="left-box" />
+		</form>
+	</div>
+	<div id="right">
+		<form class="sub_form">
+			<input type="checkbox" name="all">all
+			<input type="checkbox" name="m1">M1
+			<input type="checkbox" name="m2">M2
+			<input type="checkbox" name="m3">M3
+			<input type="checkbox" name="m4">M4
+			<input type="checkbox" name="m5">M5<br /><br/>
+		</form>
+		<form>
+			<label>Month/Year:</label>
+			<input type="date" name="join" value="2019-07-14" min="2001-01-01" max="2022-12-31">
+		</form>
+	</div>
+	<div id="boxes">
+		<form>
+            <label class="listbox_name" style="left:110px" >ALL</label>
+		  <select class="listbox" size="3" multiple="multiple"    style="margin-left: 15px;">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="4">40</option>
+			<option value="5">50</option>
+          </select>
+		  <button class="hide_but" type="button"  name="hide">Hide</button>
+            <label class="listbox_name">M1</label>
+          <select class="listbox" size="3" multiple="multiple">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="4">40</option>
+			<option value="5">50</option>
+		  </select>
+		  <button class="hide_but" type="button" name="hide">Hide</button>
+            <label class="listbox_name">M2</label>
+          <select class="listbox" size="3" multiple="multiple">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="4">40</option>
+			<option value="5">50</option>
+		  </select>
+		  <button class="hide_but" type="button" name="hide">Hide</button>
+            <label class="listbox_name">M3</label>
+          <select class="listbox" size="3" multiple="multiple">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="4">40</option>
+			<option value="5">50</option>
+		  </select>
+		  <button class="hide_but" type="button" name="hide">Hide</button>
+            <label class="listbox_name">M4</label>
+          <select class="listbox" size="3" multiple="multiple">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="4">40</option>
+			<option value="5">50</option>
+		  </select>
+		  <button class="hide_but" type="button" name="hide">Hide</button>
+            <label class="listbox_name">M5</label>
+          <select class="listbox" size="3" multiple="multiple">
+			<option value="1">10</option>
+			<option value="2">20</option>
+			<option value="3">30</option>
+			<option value="4">40</option>
+			<option value="5">50</option>
+		  </select>
+		  <button class="hide_but" type="button" name="hide">Hide</button>
+		</form>
+	</div>
+	<div id="button">
+		<form>
+			<input class="left but" type="button" name="unhide" value="Unhide all">
+			<input class="but" type="button" name="clear" value="Clear Filters">
+			<input class="but" type="button" name="apply" value="Apply Filters">
+		</form>
+	</div>
+    <div id="bottom">
+		<table rules="all">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+    </div>
+</body>
+</html>
