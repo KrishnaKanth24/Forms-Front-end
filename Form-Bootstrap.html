@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <title>College-Bootstrap</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <style text='text/css'>
+            body{
+                background-image: linear-gradient(to bottom right, #578096, #7F5E5E)
+            }
+            .one{
+                height:60px;
+                background-color: cornflowerblue;
+                }
+                h1{
+                    margin: 0px;
+                    padding-left: 25px;
+                    padding-top: 10px;
+                }
+           .row{
+               /*i am using row from bootstrap only to divide into 2 cols*/
+                margin-right: 0px;
+                } 
+            .two-left{
+                padding-top:40px;
+                padding-left:60px;
+                height:300px;
+                /* background-color: blueviolet; */
+                }
+                .col-sm-10{
+                    width:40%;
+                }
+            .two-right{
+                height: 300px;
+                /* background-color: azure; */
+                }
+                .checkbox2{
+                    width:290px;
+                    height: 90px;
+                    margin-top: 60px;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    border: 1px solid black;
+                }
+                .label-2R{
+                    font-size: 22px;
+                    margin-right: 15px;
+                }
+                .calendar-2R{
+                    margin-left: 5px;
+                    width: 200px;
+                }
+            .three{
+                overflow: auto;
+                height: 160px;
+                margin-bottom: 0px;
+                /* background-color: burlywood; */
+                white-space: nowrap;
+                }
+                .group3{
+                    padding-right: 70px;
+                    }
+                    .label3{
+                        display: block;
+                        text-align: center;
+                        padding-top:2px;
+                        margin-bottom: 0;                    
+                        }
+                    .selectbox3{
+                        border:0;
+                        padding: 1px; 
+                        }
+                    .button3{
+                        margin-top:5px;
+                        margin-left: 20px;
+                        }
+            .four{
+                padding-top: 8px;
+                height: 50px;
+                /* background-color: cornflowerblue; */
+                }
+                .but4{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    margin-right: 30px;
+                
+                }
+            .five{
+                height:190px;
+                /* background-color: dimgray; */
+                }
+                .table{
+                    font-size: 20px;
+                    font-family: fantasy;
+                    height: 100%;
+                    margin-bottom:0;
+                }
+                td{
+                    text-align: center;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="one">
+            <h1>College Department Website</h1>
+        </div>
+        <div class="row">
+            <div class="two-left col-lg-6"> 
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">College:</label>
+                        <input type="text" class="form-control col-sm-10" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Department:</label>
+                        <select class="form-control col-sm-10">
+                            <option>Computer</option>
+                            <option>Communications</option>
+                            <option>Electrical</option>
+                            <option>Mechanical</option>
+                            <option>Instrumentation</option>
+                        </select>                       
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Dept Code:</label>                      
+                        <input type="text" class="form-control col-sm-10" />                 
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-2">Total Students:</label>           
+                        <input type="text" class="form-control col-sm-10" />                        
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-2">Result:</label>                       
+                        <input type="text" class="form-control col-sm-10" />                        
+                    </div>
+                </form>                
+            </div>
+            <div class="two-right col-lg-6">
+                <div class="checkbox2 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="label-2R form-check-label">All</label>
+                    <input type="checkbox" class="form-check-input">
+                    <label class="label-2R form-check-label">M1</label>
+                    <input type="checkbox" class="form-check-input">
+                    <label class="label-2R form-check-label">M2</label>
+                    <input type="checkbox" class="form-check-input">
+                    <label class="label-2R form-check-label">M3</label>
+                    <input type="checkbox" class="form-check-input">
+                    <label class="label-2R form-check-label">M4</label>
+                    <input type="checkbox" class="form-check-input">
+                    <label class="label-2R form-check-label">M5</label>
+                </div>
+                <div class="calen">
+                    <label class="control-label">Month/Year:
+        			<input class="calendar-2R"type="date" name="join" value="2019-07-18" min="2001-01-01" max="2022-12-31" />
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="three form-inline">
+            <div class=" group3 form-group" style="padding-left: 30px;">
+                <label class="label3">All</label>
+                <select multiple class=" selectbox3 form-control" style="display: block;  width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M1</label>
+                <select multiple class="selectbox3 form-control"style="display: block;  width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class="button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M2</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M3</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M4</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M5</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div> 
+            <div class="group3 form-group">
+                <label class="label3">M4</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M4</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M4</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>
+            <div class="group3 form-group">
+                <label class="label3">M4</label>
+                <select multiple class="selectbox3 form-control"style="display: block; width: 100px;">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                <button type="button" class=" button3 btn btn-primary">Hide</button>
+            </div>8
+        </div>
+        <div class="four">
+            <button type="reset" class=" But4 btn btn-primary" style="margin-left: 45px;">Unhide All</button>
+            <button type="button" class=" But4 btn btn-primary">Clear Filter</button>
+            <button type="button" class="But4 btn btn-primary">Apply Filter</button>
+        </div>
+        <div class="five">
+            <table class="table table-bordered">
+                <tr>
+                    <td>All</td>
+                    <td>M1</td>
+                    <td>M2</td>
+                    <td>M3</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
